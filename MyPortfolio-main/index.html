@@ -29,6 +29,41 @@
         .button:hover {
             background-color: #f1f1f1;
         }
+        
+        /* Contact Form Styling */
+        .alert {
+            border-radius: 10px;
+            border: none;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .alert-success {
+            background-color: rgba(20, 184, 135, 0.1);
+            color: #14B789;
+            border: 1px solid rgba(20, 184, 135, 0.3);
+        }
+        
+        .alert-danger {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: #ef4444;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+        
+        .form-control:focus {
+            border-color: #14B789;
+            box-shadow: 0 0 0 0.2rem rgba(20, 184, 135, 0.25);
+        }
+        
+        .form-floating > label {
+            color: #717275;
+        }
+        
+        .form-floating > .form-control:focus ~ label,
+        .form-floating > .form-control:not(:placeholder-shown) ~ label {
+            color: #14B789;
+        }
     </style>
 
     <link rel="icon" type="image/x-icon"
@@ -52,6 +87,13 @@
 
     <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
 
+    <!-- EmailJS for contact form functionality -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("c6AuTeRHNVsft65IR");
+        })();
+    </script>
 
 </head>
 
@@ -78,7 +120,7 @@
 
             <div class="d-flex align-items-center d-lg-none">
                 <!--                 <i class="navbar-icon bi-telephone-plus me-3"></i> -->
-                <a class="custom-btn btn" href="#section_5">
+                <a class="custom-btn btn" href="#section_7">
                     Resume
                 </a>
             </div>
@@ -94,15 +136,21 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_3">Skill</a>
+                        <a class="nav-link click-scroll" href="#section_3">Experience</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Skills</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_4">Projects</a>
+                        <a class="nav-link click-scroll" href="#section_6">Projects</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                        <a class="nav-link click-scroll" href="#section_7">Contact</a>
                     </li>
                 </ul>
 
@@ -113,7 +161,8 @@
 
 
                     <a class="custom-btn btn"
-                        href="https://drive.google.com/file/d/1fs5eS7A2usetCKguaT8M6zmhme7LvHHq/view?usp=sharing" target="_blank">Resume</a>
+                        href="https://drive.google.com/file/d/1fs5eS7A2usetCKguaT8M6zmhme7LvHHq/view?usp=sharing"
+                        target="_blank">Resume</a>
                 </div>
             </div>
 
@@ -136,7 +185,7 @@
                                 <h1 class="hero-title ms-3 mb-0">Hello Everyone !</h1>
                             </div>
 
-                            <h2 class="mb-4">I’ m Java Backend Developer.</h2>
+                            <h2 class="mb-4">I'm a Full Stack Developer.</h2>
                             <p class="mb-4">
 
                                 <!-- <a href="" download>
@@ -195,12 +244,12 @@
                                     feel
                                     interesting otherwise you feel boring" &#128072; written by Mohammad Ahtisham</span>
                             </p>
-                            <p> A java developer with a passion to learn and work with new technologies that
-                            make a positive impact on society and dedicated to learning better ways to write
-                            clean and efficient code while keeping up with the newest tech stacks. Searching
-                            for a Java developer role that will leverage my expertise in creativity, analytics,
-                            and problem-solving while providing opportunities to grow and enhance my
-                            technical abilities.</p>
+                            <p> A passionate Full Stack Developer with 2 years of experience in frontend development,
+                                currently working at Phantasm Solutions Pvt Ltd. I specialize in building responsive and
+                                scalable web applications using modern technologies like React.js, Next.js, and Node.js.
+                                With a strong foundation in both frontend and backend development, I'm dedicated to
+                                creating efficient, user-friendly solutions that make a positive impact. I'm currently
+                                expanding my skills by learning Node.js to enhance my full-stack capabilities.</p>
 
                         </div>
                     </div>
@@ -252,30 +301,84 @@
                                             - 271001, Uttar Pradesh, India</a></span>
                                 </p>
                                 <div class="profile-thumb">
-                                    <p>
                                     <div class="profile-title">
-                                        <h4 class="mb-0" style="text-align: center;color: aliceblue;"> GitHub Statistics
-                                            & Calender section</h4>
+                                        <h4 class="mb-0" style="text-align: center; color: aliceblue;">GitHub Statistics & Calendar</h4>
+                                    </div>
+                                    
+                                    <!-- GitHub Activity Calendar -->
+                                    <div class="github-calendar-container" style="margin: 30px 0;">
                                         <img src="https://ghchart.rshah.org/ahtishamkhan5678" alt="ahtishamkhan5678"
-                                            style="width: 100%;
-                                height: auto; margin-top: 5vh; margin-bottom: 4.5vh;" />
-
-                                        <div class="profile-thumb">
-
-                                            <p>
-
-                                                <a href="https://github.com/ahtishamkhan5678">
-                                                    <img align="left" height="198vh" width="50%"
-                                                        src="https://github-readme-stats-eight-theta.vercel.app/api?username=ahtishamkhan5678&show_icons=true&theme=algolia&include_all_commits=true&count_private=true" />
-                                                    <img align="right" height="198vh" width="50%"
-                                                        src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ahtishamkhan5678&layout=compact&langs_count=8&theme=algolia" />
-                                                </a>
-                                            </p>
-
-                                        </div>
-
+                                            style="width: 100%; height: auto; border-radius: 10px;" />
                                     </div>
 
+                                    <!-- GitHub Statistics Cards -->
+                                    <div class="row" style="margin: 0;">
+                                        <div class="col-lg-6 col-md-12 col-12" style="padding: 0 10px; margin-bottom: 20px;">
+                                            <div class="github-stats-card" style="background: #0d1117; border: 1px solid #30363d; border-radius: 10px; padding: 20px; height: 280px; display: flex; flex-direction: column;">
+                                                <h5 style="color: #58a6ff; margin-bottom: 20px; text-align: center; font-size: 18px; flex-shrink: 0;">My GitHub Statistics</h5>
+                                                
+                                                <div class="stats-content" style="display: flex; justify-content: space-between; align-items: flex-start; flex: 1;">
+                                                    <div class="stats-list" style="flex: 1;">
+                                                        <div class="stat-item" style="margin-bottom: 15px; color: #c9d1d9; display: flex; align-items: center;">
+                                                            <span style="color: #58a6ff; margin-right: 10px; font-size: 18px; min-width: 20px;">⭐</span> 
+                                                            <span style="font-size: 14px;">Total Stars: <strong style="color: white; margin-left: 5px;">37</strong></span>
+                                                        </div>
+                                                        <div class="stat-item" style="margin-bottom: 15px; color: #c9d1d9; display: flex; align-items: center;">
+                                                            <span style="color: #58a6ff; margin-right: 10px; font-size: 18px; min-width: 20px;">📅</span> 
+                                                            <span style="font-size: 14px;">Total Commits: <strong style="color: white; margin-left: 5px;">400</strong></span>
+                                                        </div>
+                                                        <div class="stat-item" style="margin-bottom: 15px; color: #c9d1d9; display: flex; align-items: center;">
+                                                            <span style="color: #58a6ff; margin-right: 10px; font-size: 18px; min-width: 20px;">🔀</span> 
+                                                            <span style="font-size: 14px;">Total PRs: <strong style="color: white; margin-left: 5px;">11</strong></span>
+                                                        </div>
+                                                        <div class="stat-item" style="margin-bottom: 15px; color: #c9d1d9; display: flex; align-items: center;">
+                                                            <span style="color: #58a6ff; margin-right: 10px; font-size: 18px; min-width: 20px;">⚠️</span> 
+                                                            <span style="font-size: 14px;">Total Issues: <strong style="color: white; margin-left: 5px;">0</strong></span>
+                                                        </div>
+                                                        <div class="stat-item" style="margin-bottom: 15px; color: #c9d1d9; display: flex; align-items: center;">
+                                                            <span style="color: #58a6ff; margin-right: 10px; font-size: 18px; min-width: 20px;">📁</span> 
+                                                            <span style="font-size: 14px;">Contributed to: <strong style="color: white; margin-left: 5px;">0</strong></span>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="grade-circle" style="width: 70px; height: 70px; border: 3px solid #58a6ff; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #0d1117; margin-left: 20px; flex-shrink: 0;">
+                                                        <span style="color: white; font-weight: bold; font-size: 20px;">A+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-6 col-md-12 col-12" style="padding: 0 10px; margin-bottom: 20px;">
+                                            <div class="github-langs-card" style="background: #0d1117; border: 1px solid #30363d; border-radius: 10px; padding: 20px; height: 280px; display: flex; flex-direction: column;">
+                                                <h5 style="color: #58a6ff; margin-bottom: 20px; text-align: center; font-size: 18px; flex-shrink: 0;">My Programming Languages</h5>
+                                                <div class="languages-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                                    <div class="language-bar" style="background: #21262d; height: 20px; border-radius: 10px; margin-bottom: 20px; overflow: hidden;">
+                                                        <div style="background: linear-gradient(90deg, #e34c26 0%, #f1e05a 32.96%, #b07219 64.29%, #563d7c 73.09%, #2b7489 79.51%, #c6538c 99.73%, #89e051 100%); height: 100%; width: 100%;"></div>
+                                                    </div>
+                                                    <div class="language-legend" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                                        <div class="legend-item" style="display: flex; align-items: center; font-size: 13px; color: #c9d1d9;">
+                                                            <span style="width: 12px; height: 12px; background: #e34c26; border-radius: 50%; margin-right: 8px;"></span> HTML (32.96%)
+                                                        </div>
+                                                        <div class="legend-item" style="display: flex; align-items: center; font-size: 13px; color: #c9d1d9;">
+                                                            <span style="width: 12px; height: 12px; background: #f1e05a; border-radius: 50%; margin-right: 8px;"></span> Java (31.33%)
+                                                        </div>
+                                                        <div class="legend-item" style="display: flex; align-items: center; font-size: 13px; color: #c9d1d9;">
+                                                            <span style="width: 12px; height: 12px; background: #b07219; border-radius: 50%; margin-right: 8px;"></span> JavaScript (20.27%)
+                                                        </div>
+                                                        <div class="legend-item" style="display: flex; align-items: center; font-size: 13px; color: #c9d1d9;">
+                                                            <span style="width: 12px; height: 12px; background: #563d7c; border-radius: 50%; margin-right: 8px;"></span> CSS (8.80%)
+                                                        </div>
+                                                        <div class="legend-item" style="display: flex; align-items: center; font-size: 13px; color: #c9d1d9;">
+                                                            <span style="width: 12px; height: 12px; background: #2b7489; border-radius: 50%; margin-right: 8px;"></span> TypeScript (6.42%)
+                                                        </div>
+                                                        <div class="legend-item" style="display: flex; align-items: center; font-size: 13px; color: #c9d1d9;">
+                                                            <span style="width: 12px; height: 12px; background: #c6538c; border-radius: 50%; margin-right: 8px;"></span> EJS (0.22%)
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
 
@@ -295,14 +398,342 @@
 
         </section>
 
+        <!-- Experience & Education Section -->
+        <section class="experience-education-section section-padding" id="section_3" style="background: rgba(20, 184, 135, 0.1);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center mb-5">
+                        <h2 class="text-3xl md:text-4xl font-bold" style="color: #14B789;">
+                            Experience & Education
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Experience Column -->
+                    <div class="col-lg-6 col-12 mb-5">
+                        <h3 class="text-2xl font-semibold text-[#14B789] mb-4 flex items-center gap-3" style="display: flex; align-items: center; gap: 12px; margin-bottom: 30px;">
+                            <span style="color: #14B789; font-size: 24px;">💼</span>
+                            Professional Experience
+                        </h3>
+                        
+                        <div class="experience-card" style="background: #f9f9f9; border: 2px solid #ffffff; border-radius: 20px; padding: 30px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; position: relative; overflow: hidden; margin-bottom: 30px;">
+                            
+                            <!-- Card header -->
+                            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+                                <div>
+                                    <h3 style="color: #000000; font-size: 24px; font-weight: bold; margin-bottom: 8px;">Senior Frontend Developer</h3>
+                                    <h4 style="color: #14B789; font-size: 20px; font-weight: 600; margin-bottom: 10px;">Phantasm Solutions Pvt Ltd</h4>
+                                </div>
+                                <span style="background: rgba(20, 184, 135, 0.2); color: #14B789; padding: 8px 16px; border-radius: 20px; font-size: 12px; font-weight: 500; border: 1px solid rgba(20, 184, 135, 0.3);">
+                                    Full-time
+                                </span>
+                            </div>
+
+                            <!-- Duration and Location -->
+                            <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px; color: #717275; font-size: 14px;">
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <span style="color: #14B789;">📅</span>
+                                    <span>Jun 2023 - Present</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <span style="color: #14B789;">📍</span>
+                                    <span>On Site</span>
+                                </div>
+                            </div>
+
+                            <!-- Technologies -->
+                            <div style="margin-bottom: 25px;">
+                                <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                    <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 6px 12px; border-radius: 8px; font-size: 12px; border: 1px solid rgba(20, 184, 135, 0.3);">React.js</span>
+                                    <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 6px 12px; border-radius: 8px; font-size: 12px; border: 1px solid rgba(20, 184, 135, 0.3);">Next.js</span>
+                                    <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 6px 12px; border-radius: 8px; font-size: 12px; border: 1px solid rgba(20, 184, 135, 0.3);">TypeScript</span>
+                                    <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 6px 12px; border-radius: 8px; font-size: 12px; border: 1px solid rgba(20, 184, 135, 0.3);">TailwindCSS</span>
+                                    <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 6px 12px; border-radius: 8px; font-size: 12px; border: 1px solid rgba(20, 184, 135, 0.3);">Three.js</span>
+                                    <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 6px 12px; border-radius: 8px; font-size: 12px; border: 1px solid rgba(20, 184, 135, 0.3);">Node.js</span>
+                                </div>
+                            </div>
+
+                            <!-- Major Projects -->
+                            <div style="margin-bottom: 25px;">
+                                <h5 style="color: #14B789; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Major Projects Delivered (10+):</h5>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span><strong>AI Chatbot System:</strong> Implemented intelligent customer support bot with natural language processing</span>
+                                    </li>
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span><strong>Advanced Ticketing System:</strong> Built comprehensive support ticket management with real-time updates</span>
+                                    </li>
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span><strong>Shipping Admin Panel:</strong> Developed full-featured logistics management system for e-commerce operations</span>
+                                    </li>
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span><strong>E-commerce Platform:</strong> Created scalable online shopping website with advanced features</span>
+                                    </li>
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span><strong>Company Representation Portal:</strong> Built professional website for USA branch expansion</span>
+                                    </li>
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span><strong>Instagram Reel Commerce:</strong> Innovative social commerce with video content and instant cart functionality</span>
+                                    </li>
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span><strong>Interactive Animation Website:</strong> Created engaging animated platform for entertainment company</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Key Achievements -->
+                            <div>
+                                <h5 style="color: #14B789; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Technical Achievements:</h5>
+                                <ul style="list-style: none; padding: 0; margin: 0;">
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span>Led development of 10+ high-impact projects from concept to deployment</span>
+                                    </li>
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span>Implemented AI-powered solutions and advanced automation systems</span>
+                                    </li>
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span>Architected scalable e-commerce solutions with complex business logic</span>
+                                    </li>
+                                    <li style="color: #717275; font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                                        <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                        <span>Pioneered social commerce integration with video content and instant purchasing</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Hover effect overlay -->
+                            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, rgba(20, 184, 135, 0.05), rgba(83, 93, 161, 0.05)); opacity: 0; transition: opacity 0.3s ease; pointer-events: none;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Education Column -->
+                    <div class="col-lg-6 col-12 mb-5">
+                        <h3 class="text-2xl font-semibold text-[#14B789] mb-4 flex items-center gap-3" style="display: flex; align-items: center; gap: 12px; margin-bottom: 30px;">
+                            <span style="color: #14B789; font-size: 24px;">🎓</span>
+                            Education
+                        </h3>
+                        
+                        <!-- Masai School -->
+                        <div class="education-card" style="background: #f9f9f9; border: 2px solid #ffffff; border-radius: 20px; padding: 30px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; position: relative; overflow: hidden; margin-bottom: 30px;">
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+                                    <div>
+                                        <h4 style="color: #000000; font-size: 22px; font-weight: bold; margin-bottom: 8px;">Full Stack Web Development</h4>
+                                        <h5 style="color: #14B789; font-size: 18px; font-weight: 600; margin-bottom: 10px;">Masai School</h5>
+                                        <span style="background: rgba(59, 130, 246, 0.2); color: #60a5fa; padding: 6px 12px; border-radius: 15px; font-size: 11px; font-weight: 500; border: 1px solid rgba(59, 130, 246, 0.3);">
+                                            Coding Bootcamp
+                                        </span>
+                                    </div>
+                                    <div style="color: #717275; font-size: 14px; text-align: right;">
+                                        <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+                                            <span style="color: #14B789;">📅</span>
+                                            <span>Jan 2022 - Dec 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p style="color: #717275; margin-bottom: 20px; line-height: 1.6;">Intensive full-stack development program focusing on modern web technologies</p>
+
+                                <div style="margin-bottom: 20px;">
+                                    <h6 style="color: #000000; font-weight: 600; margin-bottom: 12px;">Technical Skills Gained:</h6>
+                                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                                        <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 5px 10px; border-radius: 8px; font-size: 11px; border: 1px solid rgba(20, 184, 135, 0.3);">JavaScript</span>
+                                        <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 5px 10px; border-radius: 8px; font-size: 11px; border: 1px solid rgba(20, 184, 135, 0.3);">HTML/CSS</span>
+                                        <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 5px 10px; border-radius: 8px; font-size: 11px; border: 1px solid rgba(20, 184, 135, 0.3);">Java</span>
+                                        <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 5px 10px; border-radius: 8px; font-size: 11px; border: 1px solid rgba(20, 184, 135, 0.3);">Spring Boot</span>
+                                        <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 5px 10px; border-radius: 8px; font-size: 11px; border: 1px solid rgba(20, 184, 135, 0.3);">MySQL</span>
+                                        <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 5px 10px; border-radius: 8px; font-size: 11px; border: 1px solid rgba(20, 184, 135, 0.3);">Hibernate</span>
+                                        <span style="background: rgba(20, 184, 135, 0.1); color: #14B789; padding: 5px 10px; border-radius: 8px; font-size: 11px; border: 1px solid rgba(20, 184, 135, 0.3);">Git</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h6 style="color: #000000; font-weight: 600; margin-bottom: 12px;">Key Learning Outcomes:</h6>
+                                    <ul style="list-style: none; padding: 0; margin: 0;">
+                                        <li style="color: #717275; font-size: 14px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px;">
+                                            <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                            <span>Gained technical expertise in full-stack development</span>
+                                        </li>
+                                        <li style="color: #717275; font-size: 14px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 10px;">
+                                            <span style="color: #14B789; margin-top: 6px; width: 6px; height: 6px; background: #14B789; border-radius: 50%; flex-shrink: 0;"></span>
+                                            <span>Enhanced soft skills in teamwork, proactivity, and problem-solving through hands-on experience</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Aims International School -->
+                        <div class="education-card" style="background: #f9f9f9; border: 2px solid #ffffff; border-radius: 20px; padding: 30px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+                                    <div>
+                                        <h4 style="color: #000000; font-size: 22px; font-weight: bold; margin-bottom: 8px;">Intermediate/Class 12th</h4>
+                                        <h5 style="color: #14B789; font-size: 18px; font-weight: 600; margin-bottom: 10px;">Aims International School</h5>
+                                    </div>
+                                    <div style="color: #717275; font-size: 14px; text-align: right;">
+                                        <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+                                            <span style="color: #14B789;">📅</span>
+                                            <span>2019 - 2021</span>
+                                        </div>
+                                        <div style="color: #14B789; font-weight: 600; font-size: 16px;">
+                                            Score: 82.5%
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p style="color: #717275; line-height: 1.6;">Completed higher secondary education with strong academic performance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications & Awards Row -->
+                <div class="row mt-5">
+                    <div class="col-lg-12 col-12">
+                        <h3 class="text-2xl font-semibold text-[#14B789] mb-4 flex items-center gap-3" style="display: flex; align-items: center; gap: 12px; margin-bottom: 30px; text-align: center; justify-content: center;">
+                            <span style="color: #14B789; font-size: 24px;">🏆</span>
+                            Certifications & Awards
+                        </h3>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 800px; margin: 0 auto;">
+                            <!-- Certifications -->
+                            <div>
+                                <h4 class="text-xl font-semibold text-[#14B789] mb-3" style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                                    <span style="color: #14B789; font-size: 20px;">📜</span>
+                                    Certifications
+                                </h4>
+                                <div style="display: flex; flex-direction: column; gap: 12px;">
+                                    <div style="background: #f9f9f9; border: 2px solid #ffffff; border-radius: 12px; padding: 16px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                                        <div style="display: flex; align-items: center; gap: 12px;">
+                                            <div style="width: 8px; height: 8px; background: #14B789; border-radius: 50%;"></div>
+                                            <span style="color: #000000;">Zoom Marathon Challenge</span>
+                                        </div>
+                                    </div>
+                                    <div style="background: #f9f9f9; border: 2px solid #ffffff; border-radius: 12px; padding: 16px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                                        <div style="display: flex; align-items: center; gap: 12px;">
+                                            <div style="width: 8px; height: 8px; background: #14B789; border-radius: 50%;"></div>
+                                            <span style="color: #000000;">Coding Course Completion</span>
+                                        </div>
+                                    </div>
+                                    <div style="background: #f9f9f9; border: 2px solid #ffffff; border-radius: 12px; padding: 16px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                                        <div style="display: flex; align-items: center; gap: 12px;">
+                                            <div style="width: 8px; height: 8px; background: #14B789; border-radius: 50%;"></div>
+                                            <span style="color: #000000;">Responsive Web Design</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Awards -->
+                            <div>
+                                <h4 class="text-xl font-semibold text-[#14B789] mb-3" style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                                    <span style="color: #f59e0b; font-size: 20px;">🌟</span>
+                                    Awards & Activities
+                                </h4>
+                                <div style="display: flex; flex-direction: column; gap: 12px;">
+                                    <div style="background: #f9f9f9; border: 2px solid #ffffff; border-radius: 12px; padding: 16px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                                        <div style="display: flex; align-items: flex-start; gap: 12px;">
+                                            <div style="width: 8px; height: 8px; background: #f59e0b; margin-top: 6px; flex-shrink: 0;"></div>
+                                            <span style="color: #000000;">Won 1st place in an article competition on corruption</span>
+                                        </div>
+                                    </div>
+                                    <div style="background: #f9f9f9; border: 2px solid #ffffff; border-radius: 12px; padding: 16px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                                        <div style="display: flex; align-items: flex-start; gap: 12px;">
+                                            <div style="width: 8px; height: 8px; background: #f59e0b; margin-top: 6px; flex-shrink: 0;"></div>
+                                            <span style="color: #000000;">Secured 2nd rank in a speech competition on Hindi Day</span>
+                                        </div>
+                                    </div>
+                                    <div style="background: #f9f9f9; border: 2px solid #ffffff; border-radius: 12px; padding: 16px; transition: all 0.3s ease; position: relative; overflow: hidden;">
+                                        <div style="display: flex; align-items: flex-start; gap: 12px;">
+                                            <div style="width: 8px; height: 8px; background: #f59e0b; margin-top: 6px; flex-shrink: 0;"></div>
+                                            <span style="color: #000000;"><strong>Employee of the Month</strong> - June 2023 for outstanding performance and project delivery</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-        <section class="services section-padding" id="section_3">
+
+        <section class="services section-padding" id="section_4">
             <div class="container">
                 <div class="row align-items-center">
 
+
                     <div class="col-lg-12 col-12">
                         <h3 class="text-center mb-5">Skills & Tools 🛠 </h3>
+                    </div>
+
+
+                    <!-- React.js logo -->
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                            class="clients-image img-fluid" alt="React.js">
+                    </div>
+
+                    <!-- Next.js logo -->
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+                            class="clients-image img-fluid" alt="Next.js">
+                    </div>
+
+                      <!-- js logo -->
+                      <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="data:image/png;base64,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"
+                            class="clients-image img-fluid" alt="">
+                    </div>
+
+                    <!-- html logo -->
+                    <div class="col-lg-2 col-4 ms-auto clients-item-height">
+                        <img src="html.png" class="clients-image img-fluid" alt="">
+                    </div>
+                    <!-- css logo -->
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+                            class="clients-image img-fluid" alt="">
+                    </div>
+
+                    <!-- Tailwind CSS logo -->
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="https://www.imagile.fr/wp-content/uploads/2023/04/tailwind-css-logo-vector.png"
+                            class="clients-image img-fluid" alt="Tailwind CSS">
+                    </div>
+
+
+                    
+                    <!-- Java logo -->
+                    <div class="col-lg-2 col-4 me-auto clients-item-height">
+                        <img src="java.png" class="clients-image img-fluid" alt="Java logo">
+                    </div>
+
+                   
+                    <!-- vs logo -->
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="vs.png" class="clients-image img-fluid" alt="">
+                    </div>
+                    <!-- github logo -->
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="git.png" class="clients-image img-fluid" alt="">
+                    </div>
+                    <!-- intelliji Id logo -->
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="intelli.png" class="clients-image img-fluid" alt="">
                     </div>
                     <!-- spring boot logo -->
 
@@ -320,87 +751,39 @@
                     <div class="col-lg-2 col-4 me-auto clients-item-height">
                         <img src="sql.png" class="clients-image img-fluid" alt="">
                     </div>
-                    <!-- Java logo -->
-                    <div class="col-lg-2 col-4 me-auto clients-item-height">
-                        <img src="java.png" class="clients-image img-fluid" alt="Java logo">
-                    </div>
 
-                    <!-- html logo -->
-                    <div class="col-lg-2 col-4 ms-auto clients-item-height">
-                        <img src="html.png" class="clients-image img-fluid" alt="">
-                    </div>
-                    <!-- css logo -->
-                    <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
-                            class="clients-image img-fluid" alt="">
-                    </div>
-
-
-                    <!-- dsa logo -->
-                    <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="dsa.png" class="clients-image img-fluid" alt="">
-                    </div>
-                    <!-- js logo -->
-                    <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="data:image/png;base64,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"
-                            class="clients-image img-fluid" alt="">
-                    </div>
-
-                    <!-- vs logo -->
-                    <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="vs.png" class="clients-image img-fluid" alt="">
-                    </div>
-                    <!-- github logo -->
-                    <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="git.png" class="clients-image img-fluid" alt="">
-                    </div>
-                    <!-- intelliji Id logo -->
-                    <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="intelli.png" class="clients-image img-fluid" alt="">
-                    </div>
                     <!-- post logo -->
                     <div class="col-lg-2 col-4 clients-item-height">
                         <img src="post.png" class="clients-image img-fluid" alt="">
                     </div>
-
-                    <!-- swagger logo -->
-                    <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png?20170812110931"
-                            class="clients-image img-fluid" alt="">
-                    </div>
-                    
-                     <!-- Apache.netBean -->
-                    <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="https://cdn3d.iconscout.com/3d/free/thumb/netbeans-5728461-4781225.png"
-                            class="clients-image img-fluid" alt="Apache.netBean">
-                    </div>
-
-                    <!-- JWT logo -->
-
-                    <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="JWT.png" class="clients-image img-fluid" alt="JWT logo">
-                    </div>
-
-
 
                     <!-- git blash -->
                     <div class="col-lg-2 col-4 clients-item-height">
                         <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
                             class="clients-image img-fluid" alt="git blash">
                     </div>
-                    
+
                     <!-- MongoDb logo -->
 
                     <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="https://user-images.githubusercontent.com/100846744/223147211-885bc42b-abaf-4ab3-bbbd-821eb89ba7ab.png" class="clients-image img-fluid" alt="MongoDb">
+                        <img src="https://user-images.githubusercontent.com/100846744/223147211-885bc42b-abaf-4ab3-bbbd-821eb89ba7ab.png"
+                            class="clients-image img-fluid" alt="MongoDb">
                     </div>
 
                     <!-- PostgreSQL logo -->
 
                     <div class="col-lg-2 col-4 clients-item-height">
-                        <img src="https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNTA1Njg4L29yaWdpbmFsXzBjNTQwZDYxYmI2MTJhMGZlOTU3Mzc5ZjgxMTc1OGYyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTIwMCwiaGVpZ2h0IjoxMjAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjkwfSwianBlZyI6eyJxdWFsaXR5Ijo5MH0sInJvdGF0ZSI6bnVsbH19?bc=1" class="clients-image img-fluid" alt="PostgreSQL">
+                        <img src="https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiIxNTA1Njg4L29yaWdpbmFsXzBjNTQwZDYxYmI2MTJhMGZlOTU3Mzc5ZjgxMTc1OGYyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTIwMCwiaGVpZ2h0IjoxMjAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9LCJ3ZWJwIjp7InF1YWxpdHkiOjkwfSwianBlZyI6eyJxdWFsaXR5Ijo5MH0sInJvdGF0ZSI6bnVsbH19?bc=1"
+                            class="clients-image img-fluid" alt="PostgreSQL">
                     </div>
 
+                    <!-- Node.js logo -->
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="https://nodejs.org/static/images/logo.svg" class="clients-image img-fluid"
+                            alt="Node.js">
+                    </div>
+
+                    
 
                 </div>
             </div>
@@ -413,7 +796,7 @@
             </section>
 
 
-            <section class="projects section-padding" id="section_4">
+            <section class="projects section-padding" id="section_6">
                 <div class="container">
                     <div class="row">
 
@@ -428,37 +811,87 @@
 
                         <div class="clearfix"></div>
 
-
-                        <!--BloggingApp Project Details below   -->
+                        <!--Zentry Clone Project Details below   -->
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="projects-thumb">
                                 <div class="projects-info">
-                                    <h6>Blogging_Application </h6>
-                                    <p> A REST API for a Blogging Application. This API performs all the fundamental
-                                        CRUD operations of any Blogging Application with User Security, Validation at
-                                        every step. </p>
-
-                                    </a> 
+                                    <h6>Zentry Clone</h6>
+                                    <p> A fully responsive and animated website featuring smooth transitions,
+                                        interactive elements, and optimized performance. Built with modern frontend
+                                        technologies for an engaging user experience.</p>
                                     <h6>Tech Stack </h6>
-                                    <p> JAVA | Spring Framework | Spring Boot | Spring Data JPA | Hibernate | MySQL| JWT </p>
+                                    <p> NextJS | Tailwind CSS | ThreeJS </p>
                                     <button class="button">
-                                        <a href="https://github.com/ahtishamkhan5678/Blogging_Application_APIs"
-                                            target="_blank"><small class="projects-tag" target="_blank"> Code </a>
-                                        </small>
+                                        <a href="https://github.com/ahtishamkhan5678/Animated_Website_Nextjs" target="_blank"><small class="projects-tag"> Code </a> </small>
                                     </button>
                                     <button class="button">
-                                        <a href="https://drive.google.com/file/d/1Pn_oP_wDMHGezacAdCTC-vKpFlyp0pM5/view"
-                                            target="_blank">
+                                        <a href="https://animated-website-nextjs.vercel.app/" target="_blank">
                                             Live
                                     </button>
-                                    <a href="https://camo.githubusercontent.com/2210e4a90bf1db7cf2d3466cc5f031b9ebedba261669ebabbe4944cd513a2aac/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f64332f34362f34612f64333436346134333531666466333430636362366262333763323831333831612e676966"
+                                    <a href="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
                                         class="popup-image">
-                                        <img src="https://camo.githubusercontent.com/2210e4a90bf1db7cf2d3466cc5f031b9ebedba261669ebabbe4944cd513a2aac/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f64332f34362f34612f64333436346134333531666466333430636362366262333763323831333831612e676966"
+                                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
                                             class="projects-image img-fluid" alt="">
                                     </a>
                                 </div>
-
                             </div>
+                        </div>
+
+                        <!--Microservice Project Details below   -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="projects-thumb">
+                                <div class="projects-info">
+                                    <h6>Microservice</h6>
+                                    <p> Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs. These services are built around business capabilities and can be deployed independently.</p>
+                                    <h6>Tech Stack </h6>
+                                    <p> Java | Spring Boot | Microservices Architecture </p>
+                                    <button class="button">
+                                        <a href="https://github.com/ahtishamkhan5678/Microservice" target="_blank"><small class="projects-tag"> Code </a> </small>
+                                    </button>
+                                    <!-- <button class="button">
+                                        <a href="https://github.com/ahtishamkhan5678/Microservice" target="_blank">
+                                            Live
+                                    </button> -->
+                                    <a href="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+                                        class="popup-image">
+                                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+                                            class="projects-image img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Gossip_App Project Details below   -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="projects-thumb">
+                                <div class="projects-info">
+                                    <h6>Gossip_App</h6>
+                                    <p> Gossip is a Clone of WhatsApp web application designed to replicate the functionality of the popular messaging application. It allows users to communicate with each other through instant messaging, file sharing, and real-time chat features.</p>
+                                    <h6>Tech Stack </h6>
+                                    <p> JavaScript | HTML | CSS | Web Technologies </p>
+                                    <button class="button">
+                                        <a href="#" target="_blank"><small class="projects-tag"> Code </a> </small>
+                                    </button>
+                                    <button class="button">
+                                        <a href="#" target="_blank">
+                                            Live
+                                    </button>
+                                    <a href="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2079&q=80"
+                                        class="popup-image">
+                                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2079&q=80"
+                                            class="projects-image img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View More Button -->
+                        <div class="col-12 text-center mt-5">
+                           
+                                <a href="https://github.com/ahtishamkhan5678" target="_blank" class="custom-btn">
+                                    View More Projects
+                                </a>
+                            
                         </div>
 
 
@@ -466,7 +899,7 @@
 
                         <!--Zee5 Project Details below   -->
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <!-- <div class="col-lg-4 col-md-6 col-12">
                             <div class="projects-thumb">
                                 <div class="projects-info">
                                     <h6>Zee 5</h6>
@@ -491,49 +924,50 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
 
 
-                            <!--Bus  Project Details below   -->
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="projects-thumb">
-                                    <div class="projects-info">
-                                        <h6>iBus </h6>
-                                        <p> A REST API for a Bus Reservation Application. This API performs all the fundamental
-                                            CRUD operations with User Validation at every step.  </p>
-                                        </a>
-                                        <h6>Tech Stack </h6>
-                                        <p> JAVA | Spring Framework | Spring Boot | Spring Data JPA | Hibernate | MySQL </p>
-                                        <button class="button">
-                                            <a href="https://github.com/arshiya786-af/afraid-stew-8500"
-                                                target="_blank"><small class="projects-tag" target="_blank"> Code </a>
-                                            </small>
-                                        </button>
-                                        <button class="button">
-                                            <a href="https://drive.google.com/file/d/1qgel_JAjcG5SQ3oQ9EEhP_eQ6d4o0Yb7/view?usp=sharing"
-                                                target="_blank">
-                                                Live
-                                        </button>
-                                        <a href="https://user-images.githubusercontent.com/100846744/200823463-827828d9-f686-4bc4-a9d5-eb1df69472e7.png"
-                                            class="popup-image">
-                                            <img src="https://camo.githubusercontent.com/cecd3c21792de14a4504fb77f574a12ee8410a98acaed7fd15e44bed2ee246f4/68747470733a2f2f6d65646961312e67697068792e636f6d2f6d656469612f6a3337357946786569364a744563444136352f67697068792e6769663f6369643d36633039623935326a36667a716f7279726d667739756d393832746e6e766267397633776d7866666d3832386c6b6f6c267269643d67697068792e6769662663743d73"
-                                                class="projects-image img-fluid" alt="">
-                                        </a>
-                                    </div>
-    
+                        <!--Bus  Project Details below   -->
+                        <!-- <div class="col-lg-4 col-md-6 col-12">
+                            <div class="projects-thumb">
+                                <div class="projects-info">
+                                    <h6>iBus </h6>
+                                    <p> A REST API for a Bus Reservation Application. This API performs all the
+                                        fundamental
+                                        CRUD operations with User Validation at every step. </p>
+                                    </a>
+                                    <h6>Tech Stack </h6>
+                                    <p> JAVA | Spring Framework | Spring Boot | Spring Data JPA | Hibernate | MySQL </p>
+                                    <button class="button">
+                                        <a href="https://github.com/arshiya786-af/afraid-stew-8500"
+                                            target="_blank"><small class="projects-tag" target="_blank"> Code </a>
+                                        </small>
+                                    </button>
+                                    <button class="button">
+                                        <a href="https://drive.google.com/file/d/1qgel_JAjcG5SQ3oQ9EEhP_eQ6d4o0Yb7/view?usp=sharing"
+                                            target="_blank">
+                                            Live
+                                    </button>
+                                    <a href="https://images.unsplash.com/photo-1544620347-c4fd4a3d7117?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                                        class="popup-image">
+                                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d7117?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                                            class="projects-image img-fluid" alt="">
+                                    </a>
                                 </div>
+
                             </div>
-             
+                        </div> -->
+
 
 
                         <!--Revv Project Details below   -->
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <!-- <div class="col-lg-4 col-md-6 col-12">
                             <div class="projects-thumb">
                                 <div class="projects-info">
                                     <h6>Revv</h6>
                                     <p> It is an online Self-drive car rental service web app that provides you
                                         with all the privacy with FrontEnd & some useful functionalities. </p>
-                                    <!-- </h4> -->
+                                  
                                     </a>
                                     <h6>Tech Stack </h6>
                                     <p> HTML | CSS | JavaScript </p>
@@ -551,12 +985,12 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
 
-                    
+
 
                         <!--mGNREGA Project Details below   -->
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <!-- <div class="col-lg-4 col-md-6 col-12">
                             <div class="projects-thumb">
                                 <div class="projects-info">
                                     <h6>Mgnrega</h6>
@@ -584,11 +1018,11 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
 
-                        
+
                         <!--Banggood Project Details below   -->
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <!-- <div class="col-lg-4 col-md-6 col-12">
                             <div class="projects-thumb">
                                 <div class="projects-info">
                                     <h6>Banggood </h6>
@@ -613,15 +1047,44 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
 
                         
+
+                        <!--Bus Reservation System Project Details below   -->
+                        <!-- <div class="col-lg-4 col-md-6 col-12">
+                            <div class="projects-thumb">
+                                <div class="projects-info">
+                                    <h6>Bus Reservation System</h6>
+                                    <p> Collaborated with a team of five to build and optimize a comprehensive system
+                                        with admin, user, route, bus, reservation, and feedback modules, optimizing
+                                        performance and user experience.</p>
+                                    <h6>Tech Stack </h6>
+                                    <p> Java | SpringBoot | MySQL </p>
+                                    <button class="button">
+                                        <a href="https://github.com/arshiya786-af/afraid-stew-8500"
+                                            target="_blank"><small class="projects-tag" target="_blank"> Code </a>
+                                        </small>
+                                    </button>
+                                    <button class="button">
+                                        <a href="https://drive.google.com/file/d/1qgel_JAjcG5SQ3oQ9EEhP_eQ6d4o0Yb7/view?usp=sharing"
+                                            target="_blank">
+                                            Live
+                                    </button>
+                                    <a href="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+                                        class="popup-image">
+                                        <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+                                            class="projects-image img-fluid" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
 
                     </div>
                 </div>
             </section>
 
-            <section class="contact section-padding" id="section_5">
+            <section class="contact section-padding" id="section_7">
                 <div class="container">
                     <div class="row">
 
@@ -638,43 +1101,8 @@
 
                         <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
                             <div class="contact-info contact-info-border-start d-flex flex-column">
-<!--                                 <strong class="site-footer-title d-block mb-3">Skill</strong>
-
-                                <ul class="footer-menu">
-                                    <li class="footer-menu-item"><a href="#section_3" class="footer-menu-link">Spring
-                                            Boot </a></li>
-
-                                    <li class="footer-menu-item"><a href="#section_3" class="footer-menu-link">Hibernate
-                                        </a>
-                                    </li>
-
-                                    <li class="footer-menu-item"><a href="#section_3" class="footer-menu-link">MySQl
-                                        </a>
-                                    </li>
-
-                                    <li class="footer-menu-item"><a href="#section_3" class="footer-menu-link">JAVA </a>
-                                    </li>
-
-                                    <li class="footer-menu-item"><a href="#section_3" class="footer-menu-link">CSS </a>
-                                    </li>
-
-                                    <li class="footer-menu-item"><a href="#section_3" class="footer-menu-link">HTML </a>
-                                    </li>
-
-                                    <li class="footer-menu-item"><a href="#section_3"
-                                            class="footer-menu-link">JAVASCRIPT</a></li>
-
-                                    <li class="footer-menu-item"><a href="#section_3"
-                                            class="footer-menu-link">Github</a></li>
-
-                                    <li class="footer-menu-item"><a href="#section_3" class="footer-menu-link">DSA</a>
-                                    </li>
-                                </ul> -->
-
-
                                 <strong class="site-footer-title d-block mt-4 mb-3">Start a project</strong>
-
-                                <p class="mb-0">I’m available for makings projects</p>
+                                <p class="mb-0">I'm available for makings projects</p>
                             </div>
                         </div>
 
@@ -683,7 +1111,8 @@
                                 <strong class="site-footer-title d-block mb-3">About</strong>
 
                                 <p class="mb-2">
-                                    I'm an Enthusiastic programmer . Feel free to get in touch with me.
+                                    I'm a passionate Full Stack Developer with 2 years of frontend experience, currently
+                                    learning Node.js. Feel free to get in touch with me for collaborations and projects.
                                 </p>
 
                                 <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
@@ -705,14 +1134,14 @@
                         </div>
 
                         <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                            <form action="#" method="get" class="custom-form contact-form" role="form">
+                            <form id="contactForm" class="custom-form contact-form" role="form">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-floating">
                                             <input type="text" name="name" id="name" class="form-control"
                                                 placeholder="Name" required="">
 
-                                            <label for="floatingInput">Name</label>
+                                            <label for="name">Name</label>
                                         </div>
                                     </div>
 
@@ -721,16 +1150,16 @@
                                             <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
                                                 class="form-control" placeholder="Email address" required="">
 
-                                            <label for="floatingInput">Email address</label>
+                                            <label for="email">Email address</label>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-3 col-md-6 col-6">
                                         <div class="form-check form-check-inline">
-                                            <input name="website" type="checkbox" class="form-check-input"
-                                                id="inlineCheckbox1" value="1">
+                                            <input name="github" type="checkbox" class="form-check-input"
+                                                id="githubCheck" value="github">
 
-                                            <label class="form-check-label" for="inlineCheckbox1">
+                                            <label class="form-check-label" for="githubCheck">
                                                 <i class="fa fa-github" style="font-size:36px"></i>
                                                 <a href="https://github.com/ahtishamkhan5678" target="_blank"> <span
                                                         class="form-check-label-text">Github</a></span>
@@ -740,23 +1169,24 @@
 
                                     <div class="col-lg-3 col-md-6 col-6">
                                         <div class="form-check form-check-inline">
-                                            <input name="branding" type="checkbox" class="form-check-input"
-                                                id="inlineCheckbox2" value="1">
+                                            <input name="linkedin" type="checkbox" class="form-check-input"
+                                                id="linkedinCheck" value="linkedin">
 
-                                            <label class="form-check-label" for="inlineCheckbox2">
+                                            <label class="form-check-label" for="linkedinCheck">
                                                 <i class="fa fa-linkedin-square" style="font-size:36px"></i>
-                                                <a href="https://www.linkedin.com/in/mohammad-ahtisham-85a17a228/" target="_blank"><span
-                                                        class="form-check-label-text">Linkedin</a> </span>
+                                                <a href="https://www.linkedin.com/in/mohammad-ahtisham-85a17a228/"
+                                                    target="_blank"><span class="form-check-label-text">Linkedin</a>
+                                                </span>
                                             </label>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-3 col-md-6 col-6">
                                         <div class="form-check form-check-inline">
-                                            <input name="ecommerce" type="checkbox" class="form-check-input"
-                                                id="inlineCheckbox3" value="1">
+                                            <input name="twitter" type="checkbox" class="form-check-input"
+                                                id="twitterCheck" value="twitter">
 
-                                            <label class="form-check-label" for="inlineCheckbox3">
+                                            <label class="form-check-label" for="twitterCheck">
                                                 <i class="fa fa-twitter" style="font-size:36px"></i>
                                                 <a href="https://twitter.com/mohamma23568021" target="_blank"><span
                                                         class="form-check-label-text">Twitter</a></span>
@@ -766,10 +1196,10 @@
 
                                     <div class="col-lg-3 col-md-6 col-6">
                                         <div class="form-check form-check-inline me-0">
-                                            <input name="seo" type="checkbox" class="form-check-input"
-                                                id="inlineCheckbox4" value="1">
+                                            <input name="medium" type="checkbox" class="form-check-input"
+                                                id="mediumCheck" value="medium">
 
-                                            <label class="form-check-label" for="inlineCheckbox4">
+                                            <label class="form-check-label" for="mediumCheck">
                                                 <i class="fa fa-medium" style="font-size:36px"></i>
                                                 <a href="https://medium.com/@piramal.zeeshan" target="_blank"><span
                                                         class="form-check-label-text">Medium</a></span>
@@ -780,18 +1210,33 @@
                                     <div class="col-lg-12 col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" id="message" name="message"
-                                                placeholder="Tell me about the project"></textarea>
+                                                placeholder="Tell me about the project" required=""></textarea>
 
-                                            <label for="floatingTextarea">Tell me about the project</label>
+                                            <label for="message">Tell me about the project</label>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-3 col-12 ms-auto">
-                                        <button type="submit" class="form-control">Send</button>
+                                        <button type="submit" class="form-control" id="submitBtn">
+                                            <span id="btnText">Send Message</span>
+                                            <span id="btnLoading" style="display: none;">
+                                                <i class="fa fa-spinner fa-spin"></i> Sending...
+                                            </span>
+                                        </button>
                                     </div>
 
                                 </div>
                             </form>
+                            
+                            <!-- Success/Error Messages -->
+                            <div id="formMessages" class="mt-3" style="display: none;">
+                                <div id="successMessage" class="alert alert-success" style="display: none;">
+                                    <i class="fa fa-check-circle"></i> Thank you! Your message has been sent successfully.
+                                </div>
+                                <div id="errorMessage" class="alert alert-danger" style="display: none;">
+                                    <i class="fa fa-exclamation-circle"></i> <span id="errorText">Something went wrong. Please try again.</span>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -834,7 +1279,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/custom.js"></script>
-
+    <script src="contact-form.js"></script>
 
 </body>
 
