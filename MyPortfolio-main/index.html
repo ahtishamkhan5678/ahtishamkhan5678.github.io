@@ -64,6 +64,149 @@
         .form-floating > .form-control:not(:placeholder-shown) ~ label {
             color: #14B789;
         }
+
+        /* Popup Modal Styling */
+        .welcome-popup .modal-content {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .welcome-popup .modal-dialog {
+            max-width: 750px;
+        }
+
+        .welcome-popup .modal-header {
+            border: none;
+            padding: 35px 40px 0;
+            text-align: center;
+            display: block !important;
+        }
+
+        .welcome-popup .modal-body {
+            padding: 30px 40px 40px;
+            text-align: center;
+        }
+
+        .welcome-popup .modal-title,
+        .welcome-popup .custom-modal-title {
+            display: block;
+            width: 100%;
+            text-align: center !important;
+            margin: 0;
+            color: #333;
+            font-weight: 700;
+            font-size: clamp(24px, 3.5vw, 32px);
+            text-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .welcome-popup .popup-message {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 25px 0;
+            font-weight: 500;
+        }
+
+        .welcome-popup .btn-close-popup {
+            background: white;
+            color: #667eea;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-popup .btn-close-popup:hover {
+            background: #f8f9fa;
+            color: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .welcome-popup .btn-redirect {
+            background: #14B789;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(20, 183, 137, 0.4);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .welcome-popup .btn-redirect:hover {
+            background: #0d9668;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(20, 183, 137, 0.5);
+        }
+
+        .welcome-popup .btn-close {
+            filter: brightness(0) invert(1);
+        }
+
+        .welcome-popup .popup-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        .welcome-popup .title-emoji {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-10px) rotate(5deg);
+            }
+        }
+
+        /* Background blur when popup is shown */
+        body.popup-open {
+            overflow: hidden;
+        }
+
+        body.popup-open > *:not(.modal) {
+            filter: blur(15px);
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+        body.popup-open .modal {
+            filter: none;
+            pointer-events: auto;
+            opacity: 1;
+        }
+
+        /* Hide preloader when popup is open */
+        body.popup-open .preloader {
+            display: none;
+        }
     </style>
 
     <link rel="icon" type="image/x-icon"
@@ -98,6 +241,25 @@
 </head>
 
 <body>
+
+    <!-- Welcome Popup Modal -->
+    <div class="modal welcome-popup fade" id="welcomePopup" tabindex="-1" aria-labelledby="welcomePopupLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"></div>
+                <div class="modal-body">
+                    <div class="custom-modal-title" id="welcomePopupLabel">🎉 Portfolio Updated!</div>
+                    <div class="popup-icon">🚀</div>
+                    <p class="popup-message">
+                        Sorry for the inconvenience. We have an updated portfolio!<br>
+                        This portfolio has been moved to a new location.<br>
+                        Click the button below to visit the updated version.
+                    </p>
+                    <a href="https://portfolio-v-2-1-o4f5.vercel.app/" target="_blank" class="btn-redirect">Visit New Portfolio →</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="preloader">
         <div class="spinner">

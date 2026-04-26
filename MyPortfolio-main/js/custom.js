@@ -1,11 +1,20 @@
 
   (function ($) {
-  
+
   "use strict";
 
     // PRE LOADER
     $(window).load(function(){
-      $('.preloader').fadeOut(1000); // set duration in brackets    
+      $('.preloader').fadeOut(1000); // set duration in brackets
+
+      // Show welcome popup after preloader - always show on every visit
+      setTimeout(function() {
+        var welcomePopup = new bootstrap.Modal(document.getElementById('welcomePopup'));
+        welcomePopup.show();
+
+        // Add blur effect to body when popup is shown
+        document.body.classList.add('popup-open');
+      }, 1500);
     });
 
     // CUSTOM LINK
